@@ -16,7 +16,7 @@ function renderPizzas() {
 	    instance = template.clone();
 	    instance.find('.pizza-name').html(pizza.name);
 	    instance.find('.pizza-description').html(pizza.description);
-	    instance.find('.pizza-prices').html('$' + pizza.prices[0] + ', $' + pizza.prices[1] + ', $' + pizza.prices[2]);
+	    instance.find('.pizza-prices').html('$ ' + pizza.prices[0] + ' / ' + pizza.prices[1] + ' / ' + pizza.prices[2]);
 	    instance.removeClass('.pizza-template');
         $('.pizzas').append(instance);
 	} 	
