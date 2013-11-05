@@ -1,0 +1,64 @@
+.logo {
+	height: 125px;
+	width: 500px;
+}
+
+body {
+	background-color:  #ffcc33;
+	color: white;
+}
+
+.container {
+	background-color: #314046;
+	margin-bottom: 100px;
+	padding-bottom: 20px;
+}
+
+.tab-content {
+	//padding-top: 1em;
+}
+
+footer {
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	width: 100%;
+	border-top: solid 1px white;
+	font-size: 11pt;
+	clear: both;
+	background-color: #314046;
+}
+
+footer ul, #home ul {
+	list-style-type: none;
+}
+
+#home ul {
+	padding-left: 0px;
+}
+
+.pizza, .pizza-order, .pizza-oven { 
+	border: 5px solid #EEE;
+    border-radius: 2px;
+    float: right;
+}
+
+.pizza {
+	height: 400px;
+	width: 400px;
+}
+
+.pizza-order {
+	height: 200px;
+	width: 300px;
+}
+
+.menu {
+	padding-right: 25%;
+}
+
+.pizza-oven {
+	height: 300;
+	width: 200px;
+	margin-left: 50px;
+}
