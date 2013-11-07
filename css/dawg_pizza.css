@@ -6,7 +6,6 @@
 }
 
 body {
-	//background-color:  #ffcc33;
 	background-image: url(../img/pizza1.jpg);
 	background-attachment: fixed;
 	color: white;
@@ -14,29 +13,36 @@ body {
 }
 
 .container {
-	background-color: #314046;
+	position: relative;
 	margin-bottom: 50px;
 	padding-bottom: 5px;
 }
 
-.tab-content {
-	//padding-top: 1em;
+.tab-content, .tab-pane, header, footer, nav {
+	z-index: 5;
+	position: relative;
+}
+
+.background {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color: #314046;
+	z-index: 1;
+	opacity: .75;
 }
 
 footer {
-	//position:fixed;
-	//left:0px;
-	//bottom:0px;
-	//width: 100%;
 	border-top: solid 1px white;
 	font-size: 11pt;
 	clear: both;
-	background-color: #314046;
 	padding-top: 10px;
 }
 
 .tab-pane {
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 }
 
 footer ul, #home ul {
@@ -47,7 +53,7 @@ footer ul, #home ul {
 	padding-left: 0px;
 }
 
-.pizza, .pizza-order, .pizza-oven { 
+.pizza, .pizza-oven { 
 	border: 5px solid #EEE;
     border-radius: 2px;
 }
@@ -60,12 +66,18 @@ footer ul, #home ul {
 }
 
 .pizza-order {
-	float: left;
-	height: 200px;
-	width: 300px;
-	position: fixed;
-	top: 30px;
-	right: 20px;
+	float: right;
+	opacity: .65;
+	height: 100px;
+	width: 250px;
+	margin-top: 25px;
+	margin-right: 25px;
+	border: 2px solid #EEE;
+	border-radius: 1px;
+}
+
+.pizza-order:hover {
+	opacity: 1;
 }
 
 .menu {
