@@ -18,6 +18,15 @@ body {
 	padding-bottom: 5px;
 }
 
+#home {
+	font-size: 125%;
+}
+
+#menu h2 {
+	font-size: 300%;
+	border-bottom: solid 1px black;
+}
+
 .tab-content, .tab-pane, header, footer, nav {
 	z-index: 5;
 	position: relative;
@@ -65,7 +74,7 @@ footer ul, #home ul {
 	margin-bottom: 50px;
 }
 
-.pizza-order {
+/*.pizza-order {
 	float: right;
 	opacity: .65;
 	height: 100px;
@@ -78,13 +87,13 @@ footer ul, #home ul {
 
 .pizza-order:hover {
 	opacity: 1;
-}
+}*/
 
 .menu {
 	text-align: center;
 	float: left;
-	margin-right: 25%;
-	margin-left: 10%;
+	margin-right: 15%;
+	margin-left: 15%;
 	background-image: url(../img/handmadepaper.png);
 	color: black;
 	padding: 20px;
@@ -104,7 +113,12 @@ footer ul, #home ul {
 iframe {
 	float: right;
 	margin-left: 50px;
-	margin-bottom: 10px;	
+	margin-bottom: 20px;	
+	opacity: .9;
+}
+
+iframe:hover {
+	opacity: 1;
 }
 
 ul {
