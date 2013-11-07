@@ -1,10 +1,15 @@
 /* menu.js generates the menu for Dawg Pizza */
 
 $(function() {
-   renderPizzas();
-   renderDrinks();      
-   renderDesserts();
+	var orderButton = $('.pizza-order').click(order);
+	renderPizzas();
+	renderDrinks();      
+	renderDesserts();
 });
+
+function order() {
+	alert('online ordering coming soon!');
+}
 
 function renderPizzas() {
 	var idx;
